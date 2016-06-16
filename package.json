@@ -1,0 +1,19 @@
+{
+  "name": "hr-appman",
+  "version": "1.0.0",
+  "description": "Human Resource System for Appman Co.,Ltd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thirawutp/hr-appman.git"
+  },
+  "author": "Appman Intern 2016 TEAM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thirawutp/hr-appman/issues"
+  },
+  "homepage": "https://github.com/thirawutp/hr-appman#readme"
+}
