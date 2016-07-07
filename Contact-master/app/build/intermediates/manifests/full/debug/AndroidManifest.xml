@@ -14,8 +14,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.intern.intern.MainActivity" >
-        </activity>
+        <activity android:name="com.example.intern.intern.MainActivity" />
         <activity
             android:name="com.example.intern.intern.TabActivity"
             android:theme="@style/AppTheme.NoActionBar" >
@@ -24,6 +23,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.intern.intern.viewContact"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
         </activity>
     </application>
 

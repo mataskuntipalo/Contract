@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.intern.intern.viewContact">
+
+
+    <RelativeLayout
+        android:id="@+id/imgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:id="@+id/backArrow"
+                android:src="@mipmap/ic_back_arrow"
+                android:onClick="backPage"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/below"
+            android:layout_below="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shadow_top_view_contact">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Robert Downey Jr."/>
+
+            <TextView
+                android:id="@+id/job"
+                android:layout_below="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Iron Man"/>
+        </RelativeLayout>
+
+        <com.example.intern.intern.RoundedImageView
+            android:id="@+id/imageView_round"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/downeyjr"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dataLayout"
+        android:layout_below="@+id/imgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_bottom_view_contact"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp">
+
+        <!--Data1-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/data1"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/phone1"
+                android:src="@mipmap/ic_phone"
+                />
+
+
+            <TextView
+                android:id="@+id/phoneNumber_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:text="081865587"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/phone1"/>
+
+            <TextView
+                android:id="@+id/typePhone_1"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/phoneNumber_1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:text="Mobile"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/phone1"/>
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/mes1"
+                android:src="@mipmap/ic_message"/>
+
+        </RelativeLayout>
+
+
+        <!--Data2-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/data2"
+            android:layout_below="@+id/data1"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/phone2"
+                android:src="@mipmap/ic_phone"/>
+
+            <TextView
+                android:id="@+id/phoneNumber_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:text="081865587"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/phone2"/>
+
+            <TextView
+                android:id="@+id/typePhone_2"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/phoneNumber_2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:text="Work Place"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/phone2"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/mes2"
+                android:src="@mipmap/ic_message"/>
+
+        </RelativeLayout>
+
+        <!--Line-->
+        <RelativeLayout
+            android:id="@+id/line"
+            android:layout_below="@+id/data2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#999" />
+        </RelativeLayout>
+
+
+        <!--Data3-->
+        <RelativeLayout
+            android:id="@+id/data3"
+            android:layout_below="@id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imgMail"
+                android:src="@mipmap/ic_phone"/>
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:text="R.JR@hotmail.com"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/imgMail"/>
+
+            <TextView
+                android:id="@+id/typeMail"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/mail"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:text="E-mail"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/imgMail"/>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

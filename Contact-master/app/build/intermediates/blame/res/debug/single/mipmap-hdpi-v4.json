@@ -1,7 +1,23 @@
 [
     {
+        "merged": "C:\\Users\\Papang\\Desktop\\InternShip\\hr-appman\\Contact-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_phone.png",
+        "source": "C:\\Users\\Papang\\Desktop\\InternShip\\hr-appman\\Contact-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_phone.png"
+    },
+    {
+        "merged": "C:\\Users\\Papang\\Desktop\\InternShip\\hr-appman\\Contact-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_back_arrow.png",
+        "source": "C:\\Users\\Papang\\Desktop\\InternShip\\hr-appman\\Contact-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_back_arrow.png"
+    },
+    {
         "merged": "C:\\Users\\Papang\\Desktop\\Contract-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Papang\\Desktop\\Contract-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Papang\\Desktop\\InternShip\\hr-appman\\Contact-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Papang\\Desktop\\InternShip\\hr-appman\\Contact-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Papang\\Desktop\\InternShip\\hr-appman\\Contact-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_message.png",
+        "source": "C:\\Users\\Papang\\Desktop\\InternShip\\hr-appman\\Contact-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_message.png"
     },
     {
         "merged": "C:\\Users\\Papang\\Desktop\\InternShip\\hr-appman\\Contract-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",

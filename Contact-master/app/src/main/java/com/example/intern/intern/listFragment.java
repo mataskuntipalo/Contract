@@ -1,6 +1,7 @@
 package com.example.intern.intern;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -81,8 +83,22 @@ public class listFragment extends Fragment implements View.OnClickListener {
 
         getIndexList();
         displayIndex();
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+                Object o = listView.getItemAtPosition(position);
+                Intent goContactView = new Intent(getActivity() , viewContact.class);
+                Log.i("click",position+"");
+                goContactView.putExtra("id", "J.A.R.V.I.S.");
+                startActivity(goContactView);
+            }
+        });
+
         return rootView;
     }
+
 
     private void getIndexList() {
         mapIndex = new LinkedHashMap<String, Integer>();
@@ -90,6 +106,7 @@ public class listFragment extends Fragment implements View.OnClickListener {
 
         for (String anAlphabet : alphabet) {
             for (int j = 0; j < contactData.size(); j++) {
+                Log.i("Pang",contactData.get(j).getValue());
                 if (anAlphabet.equals(contactData.get(j).getValue())) {
                     mapIndex.put(contactData.get(j).getValue(), j);
                 }
@@ -100,6 +117,8 @@ public class listFragment extends Fragment implements View.OnClickListener {
             }
         }
     }
+
+
 
     private void displayIndex() {
         LinearLayout indexLayout = (LinearLayout) rootView.findViewById(R.id.side_index);
