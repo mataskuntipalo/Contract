@@ -70,8 +70,6 @@ public class listViewAdapter extends BaseAdapter {
                 headView.setText(null);
                 view = viewText;
             }
-
-
         return view;
 
 

@@ -88,7 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/data1"
-            android:padding="20dp">
+            android:padding="10dp">
 
             <ImageView
                 android:layout_width="40dp"
@@ -113,7 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_below="@id/phoneNumber_1"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorBlack"
+                android:textColor="#c8c8c8"
                 android:textSize="14dp"
                 android:text="Mobile"
                 android:layout_marginLeft="60dp"
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/data2"
             android:layout_below="@+id/data1"
-            android:padding="20dp">
+            android:padding="10dp">
 
             <ImageView
                 android:layout_width="40dp"
@@ -159,7 +159,7 @@
                 android:layout_width="wrap_content"
                 android:layout_below="@id/phoneNumber_2"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorBlack"
+                android:textColor="#c8c8c8"
                 android:textSize="14dp"
                 android:text="Work Place"
                 android:layout_marginLeft="60dp"
@@ -196,7 +196,7 @@
             android:layout_below="@id/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp">
+            android:padding="10dp">
 
             <ImageView
                 android:layout_width="40dp"
@@ -219,7 +219,7 @@
                 android:layout_width="wrap_content"
                 android:layout_below="@id/mail"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorBlack"
+                android:textColor="#c8c8c8"
                 android:textSize="14dp"
                 android:text="E-mail"
                 android:layout_marginLeft="60dp"
@@ -227,6 +227,42 @@
 
         </RelativeLayout>
 
+        <!--Data4-->
+        <RelativeLayout
+            android:id="@+id/data4"
+            android:layout_below="@id/data3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imgLine"
+                android:src="@mipmap/ic_phone"/>
+
+            <TextView
+                android:id="@+id/idLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:text="I love Mark42"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/imgLine"/>
+
+            <TextView
+                android:id="@+id/typeLine"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/idLine"
+                android:layout_height="wrap_content"
+                android:textColor="#c8c8c8"
+                android:textSize="14dp"
+                android:text="Line ID"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/imgLine"/>
+
+        </RelativeLayout>
 
 
 
