@@ -4,12 +4,15 @@ package com.example.intern.intern;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -38,8 +41,10 @@ public class listFragment extends Fragment implements View.OnClickListener {
     ArrayList<String> listDataContact = new ArrayList<>();
     ArrayList<ContactData> contactData;
     Map<String, Integer> mapIndex;
+    listViewAdapter adapter;
     ListView listView;
     View rootView;
+    EditText search;
 
 
     public listFragment() {
@@ -57,7 +62,7 @@ public class listFragment extends Fragment implements View.OnClickListener {
                 prev = alpha;
                 all.add(new ContactData(alpha, true));
             }
-            all.add(data = new ContactData(name, false));
+            all.add(new ContactData(name, false));
         }
 
        /* Iterator itr = hSetData.iterator();
@@ -77,8 +82,9 @@ public class listFragment extends Fragment implements View.OnClickListener {
         // Inflate the layout for this fragment
         contactData = section(list);
         rootView = inflater.inflate(R.layout.fragment_list, container, false);
-        listViewAdapter adapter = new listViewAdapter(getActivity(), contactData);
+        adapter = new listViewAdapter(getActivity(), contactData);
         listView = (ListView)rootView.findViewById(R.id.listView);
+        search = (EditText)rootView.findViewById(R.id.search);
         listView.setAdapter(adapter);
 
         getIndexList();
@@ -91,10 +97,29 @@ public class listFragment extends Fragment implements View.OnClickListener {
                 Object o = listView.getItemAtPosition(position);
                 Intent goContactView = new Intent(getActivity() , viewContact.class);
                 Log.i("click",position+"");
-                goContactView.putExtra("id", "J.A.R.V.I.S.");
+                goContactView.putExtra("id", contactData.get(position).getValue());
                 startActivity(goContactView);
             }
         });
+
+
+         search.addTextChangedListener(new TextWatcher() {
+             @Override
+             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+             }
+
+             @Override
+             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                 adapter.getFilter().filter(s);
+             }
+
+             @Override
+             public void afterTextChanged(Editable s) {
+
+             }
+         });
+
 
         return rootView;
     }

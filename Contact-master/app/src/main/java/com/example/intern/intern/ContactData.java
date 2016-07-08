@@ -1,8 +1,5 @@
 package com.example.intern.intern;
 
-/**
- * Created by Papang on 30/6/2559.
- */
 public class ContactData {
     String value;
     boolean isHeader;
