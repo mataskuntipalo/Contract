@@ -85,10 +85,9 @@ public class listFragment extends Fragment implements View.OnClickListener {
         adapter = new listViewAdapter(getActivity(), contactData);
         listView = (ListView)rootView.findViewById(R.id.listView);
         search = (EditText)rootView.findViewById(R.id.search);
-        listView.setAdapter(adapter);
 
-        getIndexList();
-        displayIndex();
+
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -120,7 +119,9 @@ public class listFragment extends Fragment implements View.OnClickListener {
              }
          });
 
-
+        getIndexList();
+        displayIndex();
+        listView.setAdapter(adapter);
         return rootView;
     }
 

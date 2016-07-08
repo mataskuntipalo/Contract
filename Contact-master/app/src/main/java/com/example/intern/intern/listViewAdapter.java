@@ -63,7 +63,7 @@ public class listViewAdapter extends BaseAdapter implements Filterable {
         TextView textView = (TextView) viewText.findViewById(R.id.textView1);
         TextView headView = (TextView) viewHead.findViewById(R.id.headText);
 
-        ContactData dataAtPos = orgList.get(position);
+        ContactData dataAtPos = filter.get(position);
         if (dataAtPos.isHeader()) {
             headView.setText(dataAtPos.getValue());
                 /*textView.setText(null);*/
